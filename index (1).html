@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PEPE COIN Loading Screen</title>
+<style>
+  body {
+    background-color: #1A1A1A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .loading-screen {
+    background-color: #1A1A1A;
+    border: 2px solid #00FF00;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .loading-text {
+    color: #00FF00;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .loading-animation {
+    width: 100%;
+    height: 5px;
+    background-color: #00FF00;
+    margin-top: 10px;
+    animation: loading 2s linear infinite;
+  }
+
+  @keyframes loading {
+    0% { width: 0%; }
+    50% { width: 50%; }
+    100% { width: 100%; }
+  }
+</style>
+</head>
+<body>
+  <div class="loading-screen">
+    <div class="loading-text">PEPE COIN</div>
+    <div class="loading-animation"></div>
+  </div>
+</body>
+</html>
